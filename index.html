@@ -3,21 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance Fit</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Center Image</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
-<body style="background-color: whitesmoke;">
-    <header>
-        <div class="container">
-            <img src="Logo2.png" alt="Balance Fit" class="center-image">
-        </div>
-        <nav>
+<body>
+    <center>
+    <div class="image-container">
+        <img src="Logo2.png" alt="Balance Fit">
+    </div>
+    <div class="step-box"></div>      
+    <div class="progress-container"></div> 
+    <div class="progress-bar" id="progressBar"></div>
+
+<header>
+    <div class="content-box">
+        <h1>3 Simple Steps To A Healthy New You</h1>
+        <p1>A healthy mind is vital for a strong, resilient spirit. Embrace mental fitness as part of your daily routine.</p1>
+    </div>
+
+    <h2> Step 1: How do you feel today?
+        <nav id="videoNav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-        </nav>
-    </header>
+                 <li><a href="#" data-video-id="fLLScgWQcHc">&#128522;</a></li>
+                 <li><a href="#" data-video-id="inpok4MKVLM">&#128532;</a></li>
+                 <li><a href="#" data-video-id="Tz9d7By2ytQ">&#128544;</a></li>
+             </ul>
+         </nav>
+</h2>
+    <h2> Step 2: Doing Simple Workout
+    <div class="progress-tracker">
+        <div id="progressBar"></div>
+        <div id="progressText"> Healing in Progress</div>
+    </div>
+    
+</h2>
+    <h2> Step 3: How do you feel after the workout?
+        <form id="myForm">
+            <p><label for="inputWord">Type your thoughts right here:</label></p>
+            <input type="text" id="inputWord" name="inputWord" placeholder="Start typing...">
+            <button type="submit">Submit</button>
+        </h2>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h4> You are done! </h4>
+                <p> 📣 The only way to do great things is to start! </p>
+                </div>       
+</header>
+    </center>
 </body>
+
+</div>
+<footer>
+    <div class="Footer-logo">
+        <img src="Footer logo.png" alt="Footer-logo" class="logo-img">
+        <span class="trademark">&#8482;</span> 
+
+    <div class="quote">
+        <p id="quoteText"></p>
+          </div>
+          
+    <div class="disclaimer">
+    Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. 
+    Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. 
+    Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.
+</footer>
+
+<script src="script.js"></script>
+
 </html>
