@@ -1,22 +1,30 @@
-
-/* h1{
-    color:red;
-    background-color: antiquewhite;
-    text-align: center;
-    border: 10px black solid;
-    border-radius: 20px;
-    margin-bottom: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-} */
-h1{
-
+.container {
+    text-align: center; /* Center-align content within the container */
 }
 
-.title{
-    background-color: grey;
+header {
+    background-color: #333; /* Background color for the header */
+    padding: 20px; /* Padding around the header content */
+    color: #fff; /* Text color */
 }
 
-#important{
-    color: yellow;
+.center-image {
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default bullet points from list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 20px; /* Add spacing between navigation items */
+}
+
+nav ul li a {
+    color: #fff; /* Text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
 }
