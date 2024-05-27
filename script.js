@@ -1,9 +1,10 @@
+// This event listener waits for the HTML document to be fully loaded and parsed before executing its code
 document.addEventListener('DOMContentLoaded', function() {
-  var videoLinks = document.querySelectorAll('#videoNav a');
-  videoLinks.forEach(function(link) {
+  var videoLinks = document.querySelectorAll('#videoNav a');  // This selects all <a> elements inside an element with the id 'videoNav'
+  videoLinks.forEach(function(link) {   // This loop iterates through each selected <a> element
       link.addEventListener('click', function(event) {
           event.preventDefault(); // Prevent default link behavior
-          var videoId = link.getAttribute('data-video-id');
+          var videoId = link.getAttribute('data-video-id'); // This retrieves the value of the 'data-video-id' attribute from the clicked <a> element
           var videoUrl = 'https://www.youtube.com/watch?v=' + videoId;
           window.open(videoUrl, '_blank'); // Open link in a new window or tab
       });
@@ -30,22 +31,26 @@ document.addEventListener('DOMContentLoaded', function() {
   generateRandomQuote();
 });
 
+// This function shows the popup by changing its display style to 'block'
 function showPopup() {
   const popup = document.getElementById('popup');
   popup.style.display = 'block';
 }
 
+// This function hides the popup by changing its display style to 'none'
 function hidePopup() {
   const popup = document.getElementById('popup');
   popup.style.display = 'none';
 }
 
+// This event listener listens for the 'submit' event on the form with id 'myForm'
 document.getElementById('myForm').addEventListener('submit', function(event) {
   event.preventDefault(); 
   showPopup(); 
 });
 
+// This event listener listens for a click event on an element with class 'close'
 document.querySelector('.close').addEventListener('click', function() {
-  hidePopup();
+  hidePopup(); // This calls the function to hide the popup
 });
 
