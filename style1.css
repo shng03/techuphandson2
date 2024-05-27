@@ -70,35 +70,37 @@ h2 {
     text-align: center;
 }
 
+/* This CSS block styles the container with id 'videoNav' */
 #videoNav {
   margin-top: 20px;
 }
 
+/* This CSS block styles the <ul> element inside the 'videoNav' container */
 #videoNav ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove default bullet points from lists */
   padding: 0;
   margin: 0;
 }
 
+/* This CSS block styles the <li> elements inside the 'videoNav' container */
 #videoNav li {
-  display: inline;
+  display: inline; /* Display list items inline */
   margin-right: 10px;
 }
 
+/* This CSS block styles the <a> elements inside the 'videoNav' container */
 #videoNav a {
-  text-decoration: none; 
+  text-decoration: none; /* Remove default underline from links */
   color: #333; 
   font-size: 24px; 
 }
 
+/* This CSS block styles the <a> elements inside the 'videoNav' container when hovered over */
 #videoNav a:hover {
-  color: seashell;
+  color: seashell; /* Change text color when the link is hovered over */
 }
 
-.active {
-  font-weight: bold;
-}
-
+/* This CSS block further styles the <li> elements inside the 'videoNav' container */
 #videoNav ul li {
   display: inline;
   padding-top: 15px;
@@ -106,18 +108,21 @@ h2 {
   margin-right: 10px; 
 }
 
+/* This CSS block further styles the <a> elements inside the 'videoNav' container */
 #videoNav ul li a {
-  font-size: 60px; 
-  text-decoration: none;
+  font-size: 60px; /* Set font size for links */
+  text-decoration: none; /* Remove default underline from links */
 }
 
+/* This CSS block styles all <form> elements */
 form {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;   
+    max-width: 400px; /* Set the maximum width of the form */
+    margin: 0 auto; /* Center the form horizontally on the page */
+    text-align: center;  /* Center-align text content within the form */
 
+/* This CSS block styles an element with class 'progress-tracker' */
 }.progress-tracker {
-  width: 80%;
+  width: 80%; /* Set the width of the progress tracker */
   background-color: lightcyan;
   border-color: whitesmoke;
   border-style: solid;
@@ -126,30 +131,31 @@ form {
   margin: auto;
   height: 40px;
   padding: 20px;
-  position: relative;
+  position: relative; /* Position the progress tracker relative to its normal position */
   width: 50%;
-  color: mediumvioletred;
   height: 3%;
   margin-top: 20px;
 }
 
+/* This CSS block styles an element with id 'progressBar' */
 #progressBar {
-  height: 70%;
+  height: 70%; /* Set the height of the progress bar */
   background-color: #f9f9f9;
   border-color: #ccc;
   border-radius: 10px;
   font-size: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
+  position: absolute; /* Position the progress bar absolutely within its container */
+  top: 0; /* Position the progress bar at the top of its container */
+  left: 0; /* Position the progress bar at the left of its container */
+  bottom: 0; /* Position the progress bar at the bottom of its container */
 }
 
+/* This CSS block styles an element with id 'progressText' */
 #progressText {
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute; /* Position the progress text absolutely within its container */
+  top: 50%; /* Position the progress text at the vertical center of its container */
+  left: 50%; /* Position the progress text at the horizontal center of its container */
+  transform: translate(-50%, -50%); /* Center the progress text within its container */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: mediumvioletred;
@@ -171,7 +177,8 @@ label {
     margin-bottom: 10px;
     font-family: Tahoma, Verdana, Geneva, sans-serif; 
 }
-  
+ 
+/* This CSS block styles <input> elements of type "text" */
 input[type="text"] {
     width: 100%;
     padding: 10px;
@@ -180,14 +187,9 @@ input[type="text"] {
     border: 2px solid #ccc;
     border-style: solid;
     border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    transition: border-color 0.3s; /* Add a smooth transition effect for border color changes */
     margin-bottom: 15px;
-}
-
-input[type="text"]:focus {
-    border-color: #4CAF50;
-    font-family: Tahoma, Verdana, Geneva, sans-serif; 
 }
 
 button[type="submit"] {
@@ -197,24 +199,25 @@ button[type="submit"] {
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    cursor: pointer; /* Set cursor style to pointer */
+    transition: background-color 0.3s; /* Add a smooth transition effect for border color changes */
 }
 
 button[type="submit"]:hover {
     background-color: #4CAF50;
 }
 
+/* This CSS block defines an animation named 'fadeIn' */
   .popup {
     animation: fadeIn 0.3s ease-in-out;
   }
   
   @keyframes fadeIn {
     from {
-      opacity: 0;
+      opacity: 0; /* Start the animation with opacity 0 (invisible) */
     }
     to {
-      opacity: 1;
+      opacity: 1; /* End the animation with opacity 1 (fully visible) */
     }
   }
   
@@ -226,13 +229,6 @@ footer {
     font-size: 10px;
     text-align: center;
 }
-
-.trademark {
-    font-size: 12px;
-    vertical-align: top; 
-    margin-left: 5px; 
-    text-align: right;
-  }
   
 .logo-img {
     text-align: center;
@@ -246,30 +242,31 @@ footer {
   font-style: italic; 
   color: sienna;
   border: whitesmoke;
-  animation: blink 3s infinite;
+  animation: blink 3s infinite; /* Apply the 'blink' animation to quoted text */
 }
 
+/* This CSS block defines the keyframes for the 'blink' animation */
 @keyframes blink {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% { opacity: 0; } /* Start the animation with opacity 0 (invisible) */
+  50% { opacity: 1; } /* Middle of the animation with opacity 1 (fully visible) */
+  100% { opacity: 0; } /* End the animation with opacity 0 (invisible) */
 }
 
 .popup {
-  display: none;
-  position: fixed;
+  display: none; /* Hide elements with class 'popup' by default */
+  position: fixed; /* Position the popup relative to the browser window */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5); /* Set a semi-transparent black background */
+  z-index: 9999; /* Set a high z-index to ensure the popup appears on top of other elements */
 }
 
 .popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: absolute; /* Position the popup content absolutely */
+  top: 50%; /* Position the popup content at the vertical center of its parent */
+  left: 50%; /* Position the popup content at the horizontal center of its parent */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large; 
   color: steelblue;
@@ -280,14 +277,14 @@ footer {
   background-color:snow;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add a shadow effect to the popup content */
 }
 
 .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
+  position: absolute; /* Position the close button 10 pixels from the top of its parent */
+  top: 10px;  /* Position the close button 10 pixels from the top of its parent */
+  right: 10px;  /* Position the close button 10 pixels from the right of its parent */
+  font-size: 20px; /* Set the font size for the close button */
   font-weight: bold;
   color: tomato;
   cursor: pointer;
